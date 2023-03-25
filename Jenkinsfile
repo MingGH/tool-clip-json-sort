@@ -2,12 +2,6 @@ pipeline {
   agent any
 
   stages {
-    stage('Checkout') {
-      steps {
-        // 拉取代码
-        git url: 'https://github.com/MingGH/tool-clip-json-sort.git'
-      }
-    }
 
     stage('Build for Linux') {
       steps {
